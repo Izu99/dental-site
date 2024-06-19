@@ -10,9 +10,11 @@ body {
 
 .navbar {
 	border-bottom: #00000015;
+	position: relative;
 }
 
 .navbar ul {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
@@ -20,6 +22,7 @@ body {
 	justify-content: space-between;
 	width: 90%;
 	border-bottom: 1px solid #1234561c;
+	z-index: 999;
 }
 
 .navbar ul li a {
@@ -373,11 +376,13 @@ body {
 	font-size: 50px;
 	color: #b7be3d;
 	font-weight: 550;
+	margin: auto;
 }
 
 .homepage .choose-section .details-choose p {
 	color: #ffffff;
 	font-family: "Vollkren";
+	margin: auto;
 }
 
 .homepage .choose-section .company-choose {
@@ -728,6 +733,117 @@ body {
 	}
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.homepage .container .row .top-bar {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.homepage .container .row .top-bar .details h2,
+	.homepage .container .row .top-bar .details p,
+	.btn-appointment button {
+		display: none;
+	}
+
+	.homepage .hero-section .hero-top .top {
+		width: 100% !important;
+		top: -480px;
+	}
+
+	.homepage
+		.hero-section
+		div:not(.homepage .hero-section .divider1, .homepage .hero-section .content) {
+		padding: 1.5rem 0.5rem;
+	}
+
+	.homepage .hero-section .content {
+		top: -700px;
+	}
+
+	.homepage .comment-section {
+		width: 100%;
+	}
+
+	.card-comment .card {
+		width: 60%;
+		max-width: 60%;
+	}
+	.homepage .learnmore-section .row .card {
+		width: 100%;
+		height: 50vh;
+	}
+
+	.homepage .choose-section {
+		margin: 0;
+		padding: 0;
+	}
+
+	.homepage .choose-section .details-choose p {
+		color: #ffffff;
+		font-family: "Vollkren";
+		font-size: 14px;
+	}
+
+	.homepage .choose-section img.backgroundimg {
+		height: 120vh;
+		width: 100vw;
+	}
+
+	.homepage .choose-section .row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		left: auto;
+		width: 100%;
+	}
+
+	.homepage .choose-section .row img {
+		width: 40.5%;
+	}
+
+	.homepage .choose-section .details-choose .divider1 {
+		display: none;
+	}
+
+	.homepage .choose-section .details-choose .title {
+		width: 100%;
+		text-align: center;
+		margin: 2rem auto 2rem auto;
+	}
+
+	.homepage .choose-section .details-choose p {
+		width: 80%;
+	}
+
+	.homepage .office-section {
+		background: url("./images/office-bg (1).png");
+		margin-top: 2rem;
+		height: 250vh;
+	}
+
+	.homepage .office-section .detail-bar {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.homepage .office-section .detail-bar .container {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.homepage .office-section .detail-bar img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:850px) {
 	
 }
