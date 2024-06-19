@@ -870,11 +870,6 @@ body {
 		display: none;
 	}
 
-	.homepage .hero-section .content {
-		top: -1000px;
-		padding-top: 70%;
-	}
-
 	.homepage .about-section .container-fluid img {
 		width: 100vw !important;
 		z-index: -1;
@@ -922,7 +917,7 @@ body {
 	}
 
 	.homepage .hero-section .content {
-		top: -750px;
+		top: -1050px;
 		padding-top: 80%;
 	}
 
@@ -938,7 +933,7 @@ body {
 
 @media only screen and (max-width: 750px) {
 	.homepage .hero-section .content {
-		top: -1000px;
+		top: -1140px;
 		padding-top: 100%;
 	}
 
@@ -970,11 +965,27 @@ body {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 715px) {
+	.homepage .hero-section .content {
+		top: -1000px;
+		padding-top: 100%;
+	}
+
 	.homepage .hero-section .content .details {
 		padding: 0;
-		margin-top: 3rem;
 	}
+
+	
+.homepage .comment-section {
+	margin-top: 5rem;
+}
+	
+	
+
+.homepage .blog-section {
+	margin-top: 5rem;
+}
+
 
 	.homepage .comment-section h2 {
 		font-size: 30px;
@@ -1020,7 +1031,7 @@ body {
 @media only screen and (max-width:600px) {
 	.homepage .hero-section .content .details {
 		padding: 0;
-		margin-top: 6.5rem;
+		margin-top: 5.5rem;
 	}
 
 }
@@ -1075,13 +1086,17 @@ body {
 		font-size: 22px;
 	}
 
+	.homepage .hero-section {
+		height: 950px;
+	}
+
 	.homepage .hero-section .hero-top .top {
 		width: 100% !important;
 		top: -850px;
 	}
 
 	.homepage .hero-section .content {
-		top: -1040px;
+		top: -820px;
 		align-items: center;
 		justify-content: space-evenly;
 		padding-top: 0%;
@@ -1089,6 +1104,13 @@ body {
 	}
 
 	.homepage .hero-section .content .details {
-		padding: 0;
+		padding: 0!important;
 	}
+
+	
+.homepage .container .row .top-bar .details h2 {
+	padding: 0!important;
+}
+
+
 }
