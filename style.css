@@ -23,6 +23,7 @@ body {
 	width: 90%;
 	border-bottom: 1px solid #1234561c;
 	z-index: 999;
+	background-color: #ffffff;
 }
 
 .navbar ul li a {
@@ -70,6 +71,7 @@ body {
 	font-size: 1rem;
 	border: none;
 	padding: 0.6rem 2rem;
+	z-index: 999;
 }
 
 .homepage .hero-section {
@@ -80,6 +82,7 @@ body {
 	text-align: center;
 	width: 100vw;
 	height: 720px;
+	z-index: -1;
 }
 
 .homepage .hero-section .bg-img {
@@ -222,6 +225,9 @@ body {
 
 .card-comment .card img {
 	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .homepage .about-section {
@@ -772,6 +778,17 @@ body {
 	.card-comment .card {
 		width: 60%;
 		max-width: 60%;
+		margin: 1rem;
+	}
+	.card-comment .card img {
+		border-radius: 5%;
+		width: 100px!important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 1rem;
 	}
 	.homepage .learnmore-section .row .card {
 		width: 100%;
@@ -844,6 +861,121 @@ body {
 	}
 }
 
-@media only screen and (max-width:850px) {
-	
+@media only screen and (max-width: 850px) {
+	.homepage .hero-section .hero-top .top {
+		display: none;
+	}
+
+	.homepage .hero-section .content {
+		top: -1000px;
+		padding-top: 70%;
+	}
+
+	.homepage .about-section .container-fluid img {
+		width: 100vw !important;
+		z-index: -1;
+	}
+
+	.homepage .about-section .container-fluid .divider1 {
+		display: none;
+	}
+
+	.homepage .about-section .container-fluid h2 {
+		display: none;
+	}
+
+	.homepage .about-section .container-fluid p {
+		display: none;
+	}
+
+	.homepage .about-section .container-fluid .btn-about button {
+		display: none;
+	}
+
+	.homepage .learnmore-section .row .col-3:nth-child(1) {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+
+	.homepage .learnmore-section .row .col-3:nth-child(2) .card,
+	.homepage .learnmore-section .row .col-3:nth-child(3) .card,
+	.homepage .learnmore-section .row .col-3:nth-child(4) .card {
+		display: none;
+	}
+
+	.homepage .learnmore-section .row .card img {
+		width: 10.25vw;
+	}
+
+	.homepage .hero-section {
+		height: 450px;
+	}
+
+	.btn-appointment button {
+		display: block;
+		margin: auto;
+	}
+
+	.homepage .hero-section .content {
+		top: -750px;
+		padding-top: 80%;
+	}
+
+	.homepage .hero-section .content h2 {
+		font-size: 40px;
+		margin-bottom: 2rem;
+	}
+
+	.homepage .hero-section .content div {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.homepage .hero-section .content {
+		top: -1000px;
+		padding-top: 100%;
+	}
+
+	.homepage .hero-section .content h2 {
+		font-size: 30px;
+		margin-bottom: 2rem;
+	}
+
+	.homepage .hero-section .content div {
+		width: 60%;
+	}
+
+	.homepage .hero-section .content .details {
+		padding: 0.5rem;
+	}
+
+	.homepage .hero-section .content h2 {
+		margin-bottom: 0;
+		padding: 0;
+		font-size: 25px;
+	}
+
+	.homepage .hero-section .content h2 > span {
+		font-size: 20px;
+	}
+
+	.homepage .hero-section {
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.homepage .hero-section .content .details {
+		padding: 0;
+	}
+
+	.homepage .comment-section h2 {
+		font-size: 30px;
+	}
+
+	.homepage .comment-section .rate {
+		font-size: 30px;
+	}
 }
