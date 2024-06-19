@@ -627,18 +627,46 @@ body {
 	width: 18%;
 }
 
+.homepage .footer-section {
+	position: relative;
+}
+
+.homepage .footer-section .container {
+	color: #b7be3d;
+}
+
 .homepage .footer-section .map {
 	/* width: 100vw; Full viewport width */
 	height: 400px; /* Fixed height */
 	position: relative;
 	overflow: hidden;
-	margin-top: 5rem;
 }
 
 .homepage .footer-section .map iframe {
 	width: 100%;
 	height: 100%;
 	border: none;
+}
+
+.homepage .footer-section .container .row {
+	margin: 5rem auto 0 auto;
+	text-align: center;
+}
+
+.homepage .footer-section .container .row button {
+	background-color: #5c6971;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 1rem;
+	border: none;
+	padding: 0.6rem 2rem;
+	width: 82.5%;
+}
+
+.homepage .footer-section img {
+	position: absolute;
+	width: 100vw;
+	bottom: 0;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -786,7 +814,7 @@ body {
 	}
 	.card-comment .card img {
 		border-radius: 5%;
-		width: 100px!important;
+		width: 100px !important;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -975,17 +1003,13 @@ body {
 		padding: 0;
 	}
 
-	
-.homepage .comment-section {
-	margin-top: 5rem;
-}
-	
-	
+	.homepage .comment-section {
+		margin-top: 5rem;
+	}
 
-.homepage .blog-section {
-	margin-top: 5rem;
-}
-
+	.homepage .blog-section {
+		margin-top: 5rem;
+	}
 
 	.homepage .comment-section h2 {
 		font-size: 30px;
@@ -1003,67 +1027,64 @@ body {
 		font-size: 15px;
 	}
 
-	.homepage .tourr-section .container-fluid .row img:nth-child(1), .homepage .tourr-section .container-fluid .row img:nth-child(2) {
+	.homepage .tourr-section .container-fluid .row img:nth-child(1),
+	.homepage .tourr-section .container-fluid .row img:nth-child(2) {
 		width: 40%;
 	}
 
-.homepage .tourr-section .container-fluid .row img:nth-child(3), .homepage .tourr-section .container-fluid .row img:nth-child(4), .homepage  .tourr-section .container-fluid .row img:nth-child(5) {
-	display: none;
+	.homepage .tourr-section .container-fluid .row img:nth-child(3),
+	.homepage .tourr-section .container-fluid .row img:nth-child(4),
+	.homepage .tourr-section .container-fluid .row img:nth-child(5) {
+		display: none;
+	}
+
+	.homepage .blog-section {
+		margin-top: 5rem;
+	}
+
+	.homepage .office-section .detail-bar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.homepage .office-section .detail-bar button {
+		font-size: 15px;
+	}
 }
 
-
-.homepage .blog-section {
-	margin-top: 5rem;
-}
-
-
-.homepage .office-section .detail-bar {
-	display: flex;
-	flex-direction: column;
-}
-
-
-.homepage .office-section .detail-bar button {
-	font-size: 15px;
-}
-}
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 	.homepage .hero-section .content .details {
 		padding: 0;
 		margin-top: 5.5rem;
 	}
-
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width: 550px) {
 	.homepage .hero-section .content .details {
 		padding: 0;
 		margin-top: 9.5rem;
 	}
 
-	
-.card-comment .card img {
-	margin: auto;
+	.card-comment .card img {
+		margin: auto;
+	}
+
+	.homepage .blog-section .container .cards .row .col-12 .card {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+
+	.homepage .office-section .container-fluid button {
+		width: 50%;
+	}
+
+	.homepage .blog-section {
+		margin-top: 15rem;
+	}
 }
 
-.homepage .blog-section .container .cards .row .col-12 .card {
-	width: 60%;
-	margin: auto;
-	margin-bottom: 2rem;
-}
-
-.homepage .office-section .container-fluid button {
-	width: 50%;
-}
-
-
-.homepage .blog-section {
-	margin-top: 15rem;
-}
-}
-
-@media only screen and (max-width:525px) {
+@media only screen and (max-width: 525px) {
 	.homepage .hero-section .content .details {
 		padding: 0;
 		margin-top: 12.85rem;
@@ -1074,7 +1095,7 @@ body {
 	}
 }
 
-@media only screen and (max-width:475px) {
+@media only screen and (max-width: 475px) {
 	.homepage .hero-section .content .details {
 		padding: 0;
 		margin-top: 15rem;
@@ -1104,13 +1125,24 @@ body {
 	}
 
 	.homepage .hero-section .content .details {
-		padding: 0!important;
+		padding: 0 !important;
 	}
 
-	
-.homepage .container .row .top-bar .details h2 {
-	padding: 0!important;
-}
+	.homepage .container .row .top-bar .details h2 {
+		padding: 0 !important;
+	}
 
+	.homepage .footer-section .container .row {
+		margin: 5rem auto 0 auto;
+	}
 
+	.homepage .footer-section .container .row button {
+		background-color: #5c6971;
+		color: #ffffff;
+		border-radius: 5px;
+		font-size: 1rem;
+		border: none;
+		padding: 0.6rem 2rem;
+		width: 82.5%;
+	}
 }
