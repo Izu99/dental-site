@@ -8,6 +8,10 @@ body {
 	font-weight: 400;
 }
 
+.navbar {
+	border-bottom: #00000015;
+}
+
 .navbar ul {
 	display: flex;
 	flex-direction: row;
@@ -15,6 +19,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
+	border-bottom: 1px solid #1234561c;
 }
 
 .navbar ul li a {
@@ -71,18 +76,18 @@ body {
 	align-items: center;
 	text-align: center;
 	width: 100vw;
-	height: 800px;
+	height: 720px;
 }
 
 .homepage .hero-section .bg-img {
-	height: 800px;
+	/* height: 800px; */
 }
 
 .homepage .hero-section .hero-top .top {
 	display: flex;
 	width: 85%;
 	position: relative;
-	top: -800px;
+	top: -650px;
 	align-items: start;
 	justify-content: space-around;
 	text-align: center;
@@ -95,7 +100,7 @@ body {
 .homepage
 	.hero-section
 	div:not(.homepage .hero-section .divider1, .homepage .hero-section .content) {
-	padding: 1.5rem;
+	padding: 2.5rem;
 }
 
 .homepage .hero-section .hero-top p {
@@ -122,7 +127,7 @@ body {
 	top: -1000px;
 	align-items: center;
 	justify-content: space-evenly;
-	padding-top: 20%;
+	padding-top: 15%;
 	margin: auto;
 }
 
@@ -136,10 +141,15 @@ body {
 	color: #ffffff;
 }
 
+.homepage .hero-section .content .h2 {
+	padding: 0;
+}
+
 .homepage .hero-section .content h2 {
 	filter: drop-shadow(2px 2px 0px #0000003b);
 	font-size: 48px;
 	color: #ccd356;
+	padding: 0!important;
 }
 
 .homepage .hero-section .content h2 span {
@@ -381,7 +391,7 @@ body {
 .homepage .office-section {
 	background: url("./images/office-bg (1).png");
 	margin-top: 2rem;
-	height: 100vh;
+	height: 120vh;
 }
 
 .homepage .office-section img {
@@ -390,7 +400,6 @@ body {
 
 .homepage .office-section .container-fluid .row {
 	padding: 2rem 6.5rem;
-	background-color: #00000012;
 	/* top: ; */
 }
 
@@ -399,7 +408,7 @@ body {
 	background-color: #b7be3d;
 	width: 75px;
 	height: 2px;
-	margin: 1rem auto 3rem auto;
+	margin: 1rem 0 3rem 0;
 }
 
 .homepage .office-section .container-fluid .row .title {
@@ -408,4 +417,215 @@ body {
 	font-size: 40px;
 	color: #b7be3d;
 	font-weight: 550;
+}
+
+.homepage .office-section .container-fluid img {
+	/* width: 90%; */
+}
+
+.homepage .office-section .container-fluid .top {
+	background: #feffdc;
+	background: linear-gradient(220deg, #feffdc 0%, #ccd356 45%, #ccd45a 100%);
+}
+
+.homepage .office-section .container-fluid .top h2 {
+	color: #ffffff;
+	font-family: "vollkron";
+	padding: 2rem 2rem;
+}
+
+.homepage .office-section .container-fluid .top p {
+	font-size: 45px;
+	font-weight: 550;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "vollkron";
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.38));
+	font-family: "Open Sans";
+	font-size: 47px;
+	font-weight: bold;
+	padding: 1rem 0 2rem 0;
+}
+
+.homepage .office-section .container-fluid .bottom {
+	background: #ccd356;
+	background: linear-gradient(120deg, #ccd356 0%, #5c6971 32.5%, #3a444d 62.6%, #3a444d 100%);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.homepage .office-section .container-fluid .bottom div:nth-child(1) {
+	margin-top: 1rem;
+}
+
+.homepage .office-section .container-fluid .bottom div {
+	background-color: #00000015;
+	padding: 1rem;
+	width: 85%;
+	margin: auto;
+	color: #ffffff;
+	font-weight: 450;
+}
+
+.homepage .office-section .container-fluid .bottom p {
+	color: #ffffff;
+	font-family: "Vollkron";
+	text-align: center;
+}
+
+.homepage .office-section .container-fluid button {
+	width: 30%;
+	border: none;
+	border-radius: 5px;
+	height: 5vh;
+	font: 1rem;
+	margin: 1rem auto;
+}
+
+.homepage .office-section .detail-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 10%;
+	background-color: #ffffff;
+	border: 1px solid #1234562a;
+	width: 80%;
+	margin: auto;
+}
+
+.homepage .office-section .detail-bar .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.homepage .office-section .detail-bar img {
+	width: 10%;
+}
+
+.homepage .office-section .detail-bar p > span {
+	color: #b7be3d;
+}
+
+.homepage .office-section .detail-bar button {
+	background-color: #5c6971;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 1rem;
+	border: none;
+	padding: 0.6rem 2rem;
+}
+
+.homepage .blog-section {
+	margin-top: 2rem;
+}
+
+.homepage .blog-section .divider1 {
+	z-index: 999;
+	background-color: #b7be3d;
+	width: 75px;
+	height: 2px;
+	margin: 1rem 0 3rem 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.homepage .blog-section .title {
+	width: 95%;
+	text-align: center;
+	font-size: 35px;
+	color: #b7be3d;
+	font-weight: 550;
+	margin: 1rem 0;
+}
+
+.homepage .blog-section .container {
+}
+
+.homepage .blog-section .container .cards .row .col-3 .card {
+	border: 2px solid #1c66b120;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.homepage .blog-section .container .cards .row .col-3 .card img {
+	width: 100%;
+}
+
+.homepage .blog-section .container .cards .row .col-3 .card p {
+	margin: 1rem 0;
+	font-size: 16px;
+	font-weight: 450;
+	font-family: "vollkron";
+}
+
+.homepage .blog-section .container .cards .row .col-3 .card button {
+	background-color: #5c6971;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 14px;
+	border: none;
+	padding: 0.6rem 2rem;
+	width: 82%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 2rem auto;
+}
+
+.homepage .tourr-section {
+	margin-top: 1rem;
+}
+
+.homepage .tourr-section .divider1 {
+	z-index: 999;
+	background-color: #b7be3d;
+	width: 75px;
+	height: 2px;
+	margin: 3rem auto 3rem auto;
+	text-align: center;
+}
+
+.homepage .tourr-section .title {
+	text-align: center;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.homepage .tourr-section .container-fluid .row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.homepage .tourr-section .container-fluid .row img {
+	width: 18%;
+}
+
+.homepage .footer-section .map {
+	/* width: 100vw; Full viewport width */
+	height: 400px; /* Fixed height */
+	position: relative;
+	overflow: hidden;
+	margin-top: 5rem;
+}
+
+.homepage .footer-section .map iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
 }
