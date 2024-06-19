@@ -149,7 +149,7 @@ body {
 	filter: drop-shadow(2px 2px 0px #0000003b);
 	font-size: 48px;
 	color: #ccd356;
-	padding: 0!important;
+	padding: 0 !important;
 }
 
 .homepage .hero-section .content h2 span {
@@ -628,4 +628,106 @@ body {
 	width: 100%;
 	height: 100%;
 	border: none;
+}
+
+@media only screen and (max-width: 1150px) {
+	.homepage .hero-section .hero-top .top {
+		width: 100% !important;
+		top: -610px;
+	}
+
+	.homepage .hero-section .content {
+		top: -920px;
+		align-items: center;
+		justify-content: space-evenly;
+		padding-top: 12.25%;
+		margin: auto;
+	}
+
+	.homepage .learnmore-section .row .card {
+		width: 98%;
+		height: 35vh;
+	}
+
+	.homepage .learnmore-section .row .card p {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 14px;
+		width: 98%;
+	}
+
+	.homepage .choose-section .details-choose .divider1 {
+		margin: 1rem 0 1rem 0;
+	}
+
+	.homepage .choose-section .row {
+		position: absolute;
+		top: 15%;
+		left: 20%;
+		width: 80%;
+	}
+
+	.homepage .choose-section .details-choose p {
+		color: #ffffff;
+		font-family: "Vollkren";
+		font-size: 14px;
+	}
+
+	.homepage .choose-section .company-choose img {
+		width: 20%;
+	}
+
+	.homepage .office-section {
+		background: url("./images/office-bg (1).png");
+		margin-top: 2rem;
+		height: 120vh;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.homepage .hero-section {
+		height: 600px;
+	}
+
+	.homepage .hero-section .hero-top .top {
+		width: 100% !important;
+		top: -550px;
+	}
+
+	.homepage .hero-section .content {
+		top: -900px;
+	}
+
+	.homepage
+		.hero-section
+		div:not(.homepage .hero-section .divider1, .homepage .hero-section .content) {
+		padding: 2.5rem 0.5rem;
+	}
+	.homepage .hero-section .content h2 {
+		top: 100%;
+	}
+
+	.homepage .about-section .container-fluid .divider1 {
+		top: 10%;
+	}
+
+	.homepage .about-section .container-fluid h2 {
+		top: 20%;
+		font-size: 40px;
+	}
+
+	.homepage .about-section .container-fluid p {
+		width: 45%;
+		top: 45%;
+	}
+
+	.homepage .choose-section .row {
+		top: 10%;
+
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width:991px) {
+	
 }
