@@ -1070,13 +1070,25 @@ body {
 	}
 }
 
-@media only screen and (min-width:1920px) {
+@media only screen and (min-width: 1450px) and (max-width: 1920px) {
 	p {
 		font-size: 22px;
 	}
 
 	.homepage .hero-section .hero-top .top {
 		width: 100% !important;
-		top: -610px;
+		top: -850px;
+	}
+
+	.homepage .hero-section .content {
+		top: -1040px;
+		align-items: center;
+		justify-content: space-evenly;
+		padding-top: 0%;
+		margin: auto;
+	}
+
+	.homepage .hero-section .content .details {
+		padding: 0;
 	}
 }
